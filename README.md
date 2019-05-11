@@ -1,6 +1,6 @@
 # generate-migrations-hook
 
-This is a simple hook for Laravel Voyager, it's job to generate a migration after each database schema change.
+This is a simple hook for Laravel Voyager, its job to generate a migration after each database schema change.
 
 I like using Laravel Voyager, it really handles all the headache of creating the CRUD UI of the application,
 because I use Voyager for most of my small projects, there's one thing bothers me when it comes to using it, **database**!
