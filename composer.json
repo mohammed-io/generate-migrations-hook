@@ -1,8 +1,17 @@
 {
   "name": "generate-migrations-hook",
   "description": "This hook is to generate voyager-only migration for laravel app",
-  "version": "0.1",
+  "version": "v0.1.0beta",
   "license": "MIT",
+  "homepage": "https://github.com/mohammed-io/generate-migrations-hook",
+  "authors": [
+    {
+      "name": "Mohammed A.",
+      "email": "mohammed-io@outlook.com",
+      "homepage": "https://mohammed-io.github.io",
+      "role": "Developer"
+    }
+  ],
   "require": {
     "php": "^7.0.0",
     "larapack/hooks": "~1.0",
