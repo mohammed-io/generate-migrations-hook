@@ -2,6 +2,7 @@
   "name": "generate-migrations-hook",
   "description": "This hook is to generate voyager-only migration for laravel app",
   "version": "0.1",
+  "license": "MIT",
   "require": {
     "php": "^7.0.0",
     "larapack/hooks": "~1.0",
