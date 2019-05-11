@@ -1,5 +1,5 @@
 {
-  "name": "generate-migrations-hook",
+  "name": "mohammed-io/generate-migrations-hook",
   "description": "This hook is to generate voyager-only migration for laravel app",
   "version": "v0.1.0beta",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "php": "^7.0.0",
     "larapack/hooks": "~1.0",
     "tcg/voyager": "^1.2",
-    "laravel/framework": "^5.8"
+    "laravel/framework": "^5.5"
   },
   "autoload": {
     "psr-4": {
