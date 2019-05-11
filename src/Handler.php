@@ -49,7 +49,7 @@ class Handler
 
         $fileName = $this->utilities->generateFilename($uniqueName);
 
-        //$this->updateMigrationTable($fileName);
+        $this->updateMigrationTable($fileName);
 
         $filePath = base_path("/database/migrations/$fileName.php");
 
@@ -84,7 +84,7 @@ class Handler
 
         $fileName = $this->utilities->generateFilename($uniqueName);
 
-        //$this->updateMigrationTable($fileName);
+        $this->updateMigrationTable($fileName);
 
         $filePath = base_path("/database/migrations/$fileName.php");
 
@@ -123,7 +123,7 @@ class Handler
 
         $fileName = $this->utilities->generateFilename($uniqueName);
 
-        //$this->updateMigrationTable($fileName);
+        $this->updateMigrationTable($fileName);
 
         $filePath = base_path("/database/migrations/$fileName.php");
 
