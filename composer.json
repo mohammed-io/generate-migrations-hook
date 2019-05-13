@@ -23,11 +23,20 @@
       "MohammedIO\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "MohammedIO\\Tests\\": "tests/"
+    }
+  },
   "extra": {
     "hook": {
       "providers": [
         "MohammedIO\\GenerateMigrationsHookServiceProvider"
       ]
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.1",
+    "mockery/mockery": "^1.2"
   }
 }

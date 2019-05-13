@@ -3,6 +3,7 @@
 namespace MohammedIO;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class Utilities
@@ -47,73 +48,17 @@ class Utilities
     }
 
     /**
-     * @param string $content
-     * @return string
+     * @param $path
+     * @return false|string
      */
-    public function generateContentWithDatabaseUpdater(string $content)
+    public function readFile($path)
     {
-        return "DatabaseUpdater::update(
-            $content
-        );";
-    }
-
-    public function generateContentWithSchemaManager(string $content)
-    {
-        return "SchemaManager::createTable(
-            $content
-        );";
-    }
-
-    public function generateContentWithDropStatement(string $tableName)
-    {
-        return "Schema::dropIfExists('$tableName');";
+        return file_get_contents($path);
     }
 
     /**
-     * @param array $options
-     * @return string
-     */
-    public function getFileContent($options)
-    {
-        $upContent = $options['upContent'] ?? '//';
-        $downContent = $options['downContent'] ?? '//';
-
-        $className = $options['name'];
-
-        return "<?php
-
-use Illuminate\Database\Migrations\Migration;
-use TCG\Voyager\Database\DatabaseUpdater;
-use TCG\Voyager\Database\Schema\SchemaManager;
-
-class $className extends Migration
-{
-    /**
-     * Run the migrations.
+     * @author Dave Pearson at [https://www.php.net/manual/en/function.com-create-guid.php#119168]
      *
-     * @return void
-     */
-    public function up()
-    {
-        // Generated only to work with Voyager
-        $upContent
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        $downContent
-    }
-}
-
-        ";
-    }
-
-    /**
      * @param bool $trim
      * @return string
      */
