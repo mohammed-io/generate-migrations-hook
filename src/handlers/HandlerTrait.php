@@ -73,7 +73,7 @@ trait HandlerTrait
 
         $fileName = $this->getUtilities()->generateFilename($uniqueName);
 
-//        $this->updateMigrationTable($fileName);
+        $this->updateMigrationTable($fileName);
 
         $filePath = base_path("/database/migrations/$fileName.php");
 
