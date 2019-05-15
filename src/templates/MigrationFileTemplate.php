@@ -17,9 +17,15 @@ class MigrationFileTemplate
 use Illuminate\Database\Migrations\Migration;
 use TCG\Voyager\Database\DatabaseUpdater;
 use TCG\Voyager\Database\Schema\SchemaManager;
+use TCG\Voyager\Database\Types\Type;
 
 class $className extends Migration
 {
+    public function __construct()
+    {
+        Type::registerCustomPlatformTypes();
+    }
+    
     /**
      * Run the migrations.
      *
