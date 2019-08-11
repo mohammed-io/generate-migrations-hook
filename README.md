@@ -16,6 +16,7 @@ Because it updates the database in place, so there's no migration created, this 
 - No `down()` migration, only `up()`
 - The file and class names are not very detailed.
 - It generates a migration even if no changed happened to the table.
+- You can't change the vendor (means if mysql should stay mysql) because there's vendor specific data types.
 
 ## Contribution
 
